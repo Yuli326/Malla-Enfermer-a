@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Enfermería PM</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Malla Interactiva - Enfermería PM</h1>
+  <div class="grid-container">
+    <!-- SEMESTRE 1 -->
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramo" data-id="anatomia">Anatomía Humana</div>
+      <div class="ramo" data-id="bioquimica">Bioquímica</div>
+      <div class="ramo" data-id="sociedad">Salud y Sociedad</div>
+    </div>
+
+    <!-- SEMESTRE 2 -->
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramo" data-id="fisiologia" data-requiere="anatomia bioquimica">Fisiología</div>
+      <div class="ramo" data-id="psicologia" data-requiere="sociedad">Psicología</div>
+      <div class="ramo" data-id="enfermeria-basica">Fundamentos de Enfermería</div>
+    </div>
+
+    <!-- Puedes seguir agregando más semestres usando el mismo formato -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
